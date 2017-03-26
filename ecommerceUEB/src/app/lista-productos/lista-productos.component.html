@@ -1,0 +1,10 @@
+<div class="ecommerce-list-section">
+    <div class="ecommerce-title-section mdl-typography--display-1-color-contrast">Productos destacados</div>
+    <div class="android-card-container mdl-grid">
+        <app-cardproduct 
+            *ngFor="let producto of productos"
+            [producto]="producto"
+            class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp"
+        ></app-cardproduct>
+    </div>
+</div>

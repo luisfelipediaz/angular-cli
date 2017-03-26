@@ -1,0 +1,20 @@
+<div class="mdl-card__media">
+  <img src="assets/img/productos/{{producto.imagen}}">
+  <button class="ecommerce-favorite mdl-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" (click)="toggleFavorite()">
+    <i class="material-icons">{{ producto.favorito ? 'favorite' : 'favorite_border'}}</i>
+  </button>
+</div>
+<div class="mdl-card__title">
+  <h4 class="mdl-card__title-text">{{producto.nombre}}</h4>
+</div>
+<div class="mdl-card__supporting-text">
+  <span class="mdl-typography--font-light mdl-typography--subhead">{{producto.descripcion | slice: 0:100}}
+    <span [hidden]="producto.descripcion.length < 100">...</span>
+  </span>
+</div>
+<div class="mdl-card__actions">
+  <p class="ecommerce-details"><strong>{{producto.precio | currency: 'USD':true}}</strong> Disp. {{producto.cantidad}}</p>
+  <button class="ecommerce-link mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect">
+      <i class="material-icons">add_shopping_cart</i>
+    </button>
+</div>

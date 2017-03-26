@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "nombre": "Calaveras",
+        "descripcion": "Bellas calaveras fabricadas artesanalmente por la familia palacios del taller Nahualcalli, hechos a mano cien por ciento, cada pieza es distinta y unica, no se repite, al concretar la venta se envian las fotos de los demas modelos. se manejan precios de mayoreo",
+        "precio": 30000,
+        "cantidad": 60,
+        "imagen": "calaveras.jpg",
+        "favorito": true
+    },
+    {
+        "id": 2,
+        "nombre": "Jarrones",
+        "descripcion": "Bellos jarrones hechos en barro",
+        "precio": 70000,
+        "cantidad": 90,
+        "imagen": "jarrones.jpg",
+        "favorito": false
+    },
+    {
+        "id": 3,
+        "nombre": "Tigre",
+        "descripcion": "Bellos tigres hechos en barro",
+        "precio": 70000,
+        "cantidad": 90,
+        "imagen": "tigre.jpg",
+        "favorito": true
+    },
+    {
+        "id": 4,
+        "nombre": "Werregue",
+        "descripcion": "Bellos jarrones hechos en barro",
+        "precio": 70000,
+        "cantidad": 90,
+        "imagen": "werregue.jpg",
+        "favorito": false
+    },
+    {
+        "id": 5,
+        "nombre": "Calaveras",
+        "descripcion": "Bellas calaveras fabricadas artesanalmente por la familia palacios del taller Nahualcalli, hechos a mano cien por ciento, cada pieza es distinta y unica, no se repite, al concretar la venta se envian las fotos de los demas modelos. se manejan precios de mayoreo",
+        "precio": 30000,
+        "cantidad": 60,
+        "imagen": "calaveras.jpg",
+        "favorito": true
+    },
+    {
+        "id": 6,
+        "nombre": "Jarrones",
+        "descripcion": "Bellos jarrones hechos en barro",
+        "precio": 70000,
+        "cantidad": 90,
+        "imagen": "jarrones.jpg",
+        "favorito": false
+    },
+    {
+        "id": 7,
+        "nombre": "Tigre",
+        "descripcion": "Bellos tigres hechos en barro",
+        "precio": 70000,
+        "cantidad": 90,
+        "imagen": "tigre.jpg",
+        "favorito": false
+    },
+    {
+        "id": 8,
+        "nombre": "Werregue",
+        "descripcion": "Bellos jarrones hechos en barro",
+        "precio": 70000,
+        "cantidad": 90,
+        "imagen": "werregue.jpg",
+        "favorito": false
+    }
+]

@@ -1,0 +1,52 @@
+.mdl-card__media {
+    overflow: hidden;
+    background: transparent;
+  }
+    .mdl-card__media .ecommerce-favorite{
+      position: absolute;
+      right: 3px;
+      top: 3px;
+      color: red;
+    }
+
+    .mdl-card__media img {
+      width: 100%;
+    }
+
+   .mdl-card__title {
+    background: transparent;
+    height: auto;
+  }
+
+  .mdl-card__title-text {
+    color: black;
+    height: auto;
+  }
+
+  .mdl-card__supporting-text {
+    height: auto;
+    color: black;
+    padding-bottom: 56px;
+  }
+
+  .mdl-card__actions {
+    position: absolute;
+    bottom: 0;
+  }
+
+.mdl-card__actions .ecommerce-link {
+  margin-top: 16px;
+  display: block;
+  float: right;
+  z-index: 2;
+}
+
+.mdl-card__actions .ecommerce-details {
+  position: absolute;
+  bottom: 0;
+}
+
+  .mdl-card__actions a {
+    border-top: none;
+    font-size: 16px;
+  }
