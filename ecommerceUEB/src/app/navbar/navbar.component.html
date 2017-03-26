@@ -6,6 +6,13 @@
       <div class="mdl-layout-spacer"></div>
       <nav class="mdl-navigation mdl-layout--large-screen-only">
         <a class="mdl-navigation__link" routerLink="/home" routerLinkActive="active">Home</a>
+        <a class="mdl-navigation__link" routerLink="/favoritos" routerLinkActive="active">Favoritos</a>
+        <!-- Right aligned menu below button -->
+        <span class="mdl-badge" data-badge="4">
+          <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon" (click)="toggleRightMenu()">
+                <i class="material-icons">shopping_cart</i>
+            </button>
+          </span>
       </nav>
     </div>
   </header>
@@ -13,6 +20,14 @@
     <span class="mdl-layout-title">ECommerce UEB</span>
     <nav class="mdl-navigation">
       <a class="mdl-navigation__link" routerLink="/home" routerLinkActive="active">Home</a>
+      <a class="mdl-navigation__link" routerLink="/favoritos" routerLinkActive="active">Favoritos</a>
+    </nav>
+  </div>
+  <div class="mdl-layout__drawer-right" [ngClass]="{'active' : openRightMenu}">
+    <span class="mdl-layout-title">Carrito de compras</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" routerLink="/home" routerLinkActive="active">Home</a>
+      <a class="mdl-navigation__link" routerLink="/favoritos" routerLinkActive="active">Favoritos</a>
     </nav>
   </div>
   <main class="mdl-layout__content">
@@ -20,4 +35,5 @@
       <router-outlet></router-outlet>
     </div>
   </main>
+  <div class="mdl-layout__obfuscator-right" (click)="toggleRightMenu()"></div>
 </div>
