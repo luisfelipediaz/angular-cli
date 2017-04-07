@@ -14,7 +14,7 @@
 </div>
 <div class="mdl-card__actions">
   <p class="ecommerce-details"><strong>{{producto.precio | currency: 'USD':true}}</strong> Disp. {{producto.cantidad}}</p>
-  <button class="ecommerce-link mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect">
+  <button class="ecommerce-link mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect" (click)="agregarProducto()">
       <i class="material-icons">add_shopping_cart</i>
     </button>
 </div>

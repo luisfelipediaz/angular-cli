@@ -9,19 +9,23 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ListaProductosComponent } from './lista-productos/lista-productos.component';
 import { CardproductComponent } from './cardproduct/cardproduct.component';
 import { ProductosService } from './productos.service';
+import { ListasCarritoComprasMiniComponent } from './listas-carrito-compras-mini/listas-carrito-compras-mini.component';
+import { CarritoComprasComponent } from './carrito-compras/carrito-compras.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    AppRoutingModule
+    HttpModule/*,
+    AppRoutingModule*/
   ],
   declarations: [
     AppComponent,
     NavbarComponent,
     ListaProductosComponent,
-    CardproductComponent
+    CardproductComponent,
+    ListasCarritoComprasMiniComponent,
+    CarritoComprasComponent
   ],
   providers: [ ProductosService ],
   bootstrap: [ AppComponent ]

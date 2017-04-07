@@ -9,11 +9,7 @@
         <a class="mdl-navigation__link" routerLink="/favoritos" routerLinkActive="active">Favoritos</a>
         <!-- Right aligned menu below button -->        
       </nav>
-      <span class="mdl-badge" data-badge="4">
-          <button class="mdl-button mdl-js-button mdl-button--icon" (click)="toggleRightMenu()">
-                <i class="material-icons">shopping_cart</i>
-            </button>
-          </span>
+      <app-carrito-compras (click)="toggleRightMenu()" [compra]="compra" [ngClass]="{'add-car' : agregando}"></app-carrito-compras>
     </div>
   </header>
   <div class="mdl-layout__drawer">
@@ -32,7 +28,8 @@
   </div>
   <main class="mdl-layout__content">
     <div class="page-content">
-      <router-outlet></router-outlet>
+      <app-lista-productos [compra]="compra" (AddProducto)="seAgregaProducto($event)"></app-lista-productos>
+      <!--<router-outlet></router-outlet>-->
     </div>
   </main>
   <div class="mdl-layout__obfuscator-right" (click)="toggleRightMenu()"></div>

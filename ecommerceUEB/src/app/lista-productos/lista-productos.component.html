@@ -3,7 +3,8 @@
     <div class="android-card-container mdl-grid">
         <app-cardproduct 
             *ngFor="let producto of productos"
-            [producto]="producto"
+            [producto]="producto"            
+            (onAddProducto)="addProducto($event)"
             class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp"
         ></app-cardproduct>
     </div>

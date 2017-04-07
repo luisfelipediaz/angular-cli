@@ -6,4 +6,5 @@ export class Producto {
     cantidad: number;
     imagen: string;
     favorito: boolean;
+    cantidadComprado: number;
 }
